@@ -6,7 +6,7 @@ $cd=stripslashes($_POST['code']);
  {echo "Nothing to write";}
 #if the code string is not empty then open the target file and put form data in it
 else
-{$file=fopen("demo.php","a");
+{$file=fopen("demo.php","w");
 echo fwrite($file,$cd);
 #show a success msg 
 
