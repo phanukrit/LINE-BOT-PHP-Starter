@@ -41,7 +41,7 @@ if (!is_null($events['events'])) {
 			//var_dump($data);
 			//echo "</pre>";
 			$text = $data['messages'][0]['text']."\n";
-			$myfile = fopen("keep-line.php", "a+") or die("Unable to open file!");
+			$myfile = fopen("file.txt", "a+") or die("Unable to open file!");
 			fwrite($myfile,$text);
 			fwrite($myfile,$data);
 			fclose($myfile);
